@@ -1,0 +1,23 @@
+{
+  "name": "find-address",
+  "version": "1.0.0",
+  "description": "AWS lambda function to get data from api",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "locally": "tsc && node -e \"console.log(require('./dist/index').handler(require('./event.json')));\"",
+    "clean": "rm -rf node_modules && rm -rf yarn.lock && rm -rf package-lock.json"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "aws-sdk": "^2.1463.0",
+    "axios": "^1.5.0"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.122",
+    "@types/node": "^20.6.5",
+    "typescript": "^4.5.4"
+  }
+}
